@@ -429,6 +429,9 @@ function Calculator() {
               if (otherAdders > 0) {
                 adders = adders + parseInt(otherAdders);
               }
+              if (groundMount === "yes") {
+                adders += 1;
+              }
 
               return (
                 <FinanceListItem
