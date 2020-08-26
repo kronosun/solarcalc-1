@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -214,8 +214,6 @@ function Calculator() {
     }, 1000);
   };
 
-  const calcFinance = () => {};
-
   return (
     <div className="Calculator">
       <h2>Solar Calculator</h2>
@@ -419,13 +417,13 @@ function Calculator() {
                 const pumpTotal = 2500 * pumps;
                 adders += pumpTotal;
               }
-              if (aeroseals == 1) {
+              if (parseInt(aeroseals) === 1) {
                 adders += 1500;
               }
-              if (aeroseals == 2) {
+              if (parseInt(aeroseals) === 2) {
                 adders += 2500;
               }
-              if (aeroseals == 3) {
+              if (parseInt(aeroseals) === 3) {
                 adders += 3000;
               }
               if (otherAdders > 0) {
