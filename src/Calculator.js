@@ -404,7 +404,7 @@ function Calculator() {
 
           <div className="financing">
             {financingList.map((financeItem) => {
-              const x = pricePerWatt - 2.85;
+              const x = pricePerWatt - 2.75;
               let adders = 0;
               if (lights === "yes") {
                 adders += 250;
