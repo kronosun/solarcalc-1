@@ -1,0 +1,11 @@
+.FinanceListItem {
+  width: 90vw;
+  background-color: #333333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FinanceListItem p {
+  color: #c0c0c0;
+}
