@@ -12,6 +12,9 @@ function Calculator() {
   const [nests, setNests] = useState(0);
   const [pumps, setPumps] = useState(0);
   const [aeroseals, setAeroseals] = useState(0);
+  const [waterHeater, setWaterHeater] = useState("no");
+  const [sprayFoam, setSprayFoam] = useState("no");
+  const [curbEnergy, setCurbEnergy] = useState("no");
   const [otherAdders, setOtherAdders] = useState(0);
   const [pricePerWatt, setPricePerWatt] = useState(0);
   const [electricBill, setElectricBill] = useState(0);
@@ -235,6 +238,49 @@ function Calculator() {
             </select>
           </div>
           <div className="calc-input">
+            <label htmlFor="waterHeater">Water Heater</label>
+            <select
+              value={waterHeater}
+              onChange={(e) => {
+                setWaterHeater(e.target.value);
+              }}
+              name="waterHeater"
+              id="waterHeater"
+            >
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+          <div className="calc-input">
+            <label htmlFor="sprayFoam">Spray Foam Insulation</label>
+            <select
+              value={sprayFoam}
+              onChange={(e) => {
+                setSprayFoam(e.target.value);
+              }}
+              name="sprayFoam"
+              id="sprayFoam"
+            >
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+          <div className="calc-input">
+            <label htmlFor="curbEnergy">Curb Energy</label>
+            <select
+              value={curbEnergy}
+              onChange={(e) => {
+                setCurbEnergy(e.target.value);
+              }}
+              name="curbEnergy"
+              id="curbEnergy"
+            >
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+
+          <div className="calc-input">
             <label htmlFor="nests">Nests</label>
             <select
               value={nests}
@@ -408,6 +454,15 @@ function Calculator() {
               let adders = 0;
               if (lights === "yes") {
                 adders += 250;
+              }
+              if (waterHeater === "yes") {
+                adders += 2000;
+              }
+              if (sprayFoam === "yes") {
+                adders += 3000;
+              }
+              if (curbEnergy === "yes") {
+                adders += 650;
               }
               if (nests > 0) {
                 const nestTotal = 250 * nests;
