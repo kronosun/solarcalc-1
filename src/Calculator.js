@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,175 +31,175 @@ function Calculator() {
       loanName: "NRG CASH 0 Year | 0.00% APR",
       interestRate: 0,
       dealerFee: 0,
-      key: 0,
+      id: 0,
     },
     {
       loanName: "NRG LoanPal 7 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.1565,
       termLength: 7,
-      key: 1,
+      id: 1,
     },
     {
       loanName: "NRG LoanPal 7 Year | 7.99% APR",
       interestRate: 7.99,
       dealerFee: 0,
       termLength: 7,
-      key: 2,
+      id: 2,
     },
     {
       loanName: "NRG LoanPal 10 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.1589,
       termLength: 10,
-      key: 3,
+      id: 3,
     },
     {
       loanName: "NRG LoanPal 12 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.1849,
       termLength: 12,
-      key: 4,
+      id: 4,
     },
     {
       loanName: "NRG LoanPal 15 Year | 3.99% APR",
       interestRate: 3.99,
       dealerFee: 0.1599,
       termLength: 15,
-      key: 5,
+      id: 5,
     },
     {
       loanName: "NRG LoanPal 20 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.2075,
       termLength: 20,
-      key: 6,
+      id: 6,
     },
     {
       loanName: "NRG LoanPal 20 Year | 3.99% APR",
       interestRate: 3.99,
       dealerFee: 0.1749,
       termLength: 20,
-      key: 7,
+      id: 7,
     },
     {
       loanName: "NRG LoanPal 20 Year | 4.99% APR",
       interestRate: 4.99,
       dealerFee: 0.14,
       termLength: 20,
-      key: 8,
+      id: 8,
     },
     {
       loanName: "NRG LoanPal 20 Year | 5.99% APR",
       interestRate: 5.99,
       dealerFee: 0.0975,
       termLength: 20,
-      key: 9,
+      id: 9,
     },
     {
       loanName: "NRG LoanPal 25 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.2205,
       termLength: 25,
-      key: 10,
+      id: 10,
     },
     {
       loanName: "NRG LoanPal 25 Year | 3.99% APR",
       interestRate: 3.99,
       dealerFee: 0.2009,
       termLength: 25,
-      key: 11,
+      id: 11,
     },
     {
       loanName: "NRG LoanPal 25 Year | 4.49% APR",
       interestRate: 4.49,
       dealerFee: 0.1799,
       termLength: 25,
-      key: 12,
+      id: 12,
     },
     {
       loanName: "NRG LoanPal 25 Year | 4.99% APR",
       interestRate: 4.99,
       dealerFee: 0.1539,
       termLength: 25,
-      key: 13,
+      id: 13,
     },
     {
       loanName: "NRG LoanPal 25 Year | 5.99% APR",
       interestRate: 5.99,
       dealerFee: 0.1049,
       termLength: 25,
-      key: 14,
+      id: 14,
     },
     {
       loanName: "NRG LoanPal 25 Year | 6.99% APR",
       interestRate: 6.99,
       dealerFee: 0.0549,
       termLength: 25,
-      key: 15,
+      id: 15,
     },
     {
       loanName: "NRG LoanPal 20 Year | 3.74% APR",
       interestRate: 3.74,
       dealerFee: 0.1849,
       termLength: 20,
-      key: 16,
+      id: 16,
     },
     {
       loanName: "NRG LoanPal 10 Year | 2.99% APR",
       interestRate: 2.99,
       dealerFee: 0.1699,
       termLength: 10,
-      key: 17,
+      id: 17,
     },
     {
       loanName: "NRG LoanPal 10 Year | 7.99% APR",
       interestRate: 7.99,
       dealerFee: 0,
       termLength: 10,
-      key: 18,
+      id: 18,
     },
     {
       loanName: "NRG Sunnova 10 Year | 3.99% APR",
       interestRate: 3.99,
       dealerFee: 0.1859,
       termLength: 10,
-      key: 19,
+      id: 19,
     },
     {
       loanName: "NRG Sunnova 10 Year | 4.99% APR",
       interestRate: 4.99,
       dealerFee: 0.1459,
       termLength: 10,
-      key: 20,
+      id: 20,
     },
     {
       loanName: "NRG Sunnova 10 Year | 4.49% APR",
       interestRate: 4.49,
       dealerFee: 0.2009,
       termLength: 10,
-      key: 21,
+      id: 21,
     },
     {
       loanName: "NRG Sunnova 10 Year | 5.49% APR",
       interestRate: 5.49,
       dealerFee: 0.1709,
       termLength: 10,
-      key: 22,
+      id: 22,
     },
     {
       loanName: "NRG Sunnova 25 Year | 3.99% APR",
       interestRate: 3.99,
       dealerFee: 0.1959,
       termLength: 25,
-      key: 23,
+      id: 23,
     },
     {
       loanName: "NRG Sunnova 25 Year | 5.99% APR",
       interestRate: 5.99,
       dealerFee: 0.1309,
       termLength: 25,
-      key: 24,
+      id: 24,
     },
   ];
 
@@ -496,7 +497,8 @@ function Calculator() {
                   systemSize={systemSize}
                   adders={adders}
                   total={totalSystemPrice}
-                  key={financeItem.key}
+                  key={financeItem.id}
+                  id={financeItem.id}
                 />
               );
             })}

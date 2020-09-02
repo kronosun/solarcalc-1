@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.FinanceListItem a {
+  color: white;
+}
+
 .FinanceListItem p {
   color: #c0c0c0;
 }

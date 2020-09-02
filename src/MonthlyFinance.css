@@ -1,0 +1,114 @@
+.MonthlyFinance {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.NoSolarFinance {
+  width: 45%;
+  background-color: grey;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.SolarFinance {
+  width: 45%;
+  height: 90%;
+  background-color: grey;
+  border-radius: 5px;
+  align-self: flex-start;
+  overflow-y: scroll;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.heading p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.subheading {
+  display: flex;
+  width: 100%;
+  height: 1.8rem;
+  background-color: deepskyblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  font-size: 0.75rem;
+}
+
+.TotalPaid {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  align-self: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.details p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-finance {
+  padding: 0.5rem 1rem;
+  background-color: orange;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.btn-finance:visited {
+  color: none;
+}
+
+@media (min-height: 1000px) {
+  .NoSolarFinance {
+    height: 75%;
+    align-self: flex-start;
+  }
+
+  .TotalPaid {
+    font-size: 1rem;
+  }
+}
