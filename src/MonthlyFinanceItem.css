@@ -1,10 +1,11 @@
 .MonthlyFinanceItem {
   display: flex;
   width: 100%;
-  height: 1.2rem;
+  height: 1.3rem;
   justify-content: space-around;
   align-items: center;
   border-bottom: solid 1px black;
+  padding: 0.05rem;
 }
 
 .MonthlyFinanceItem p {
