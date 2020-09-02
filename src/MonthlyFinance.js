@@ -124,7 +124,7 @@ const MonthlyFinance = (props) => {
               <p>{`Total Amount: $${props.totalSystemPrice.toLocaleString(
                 "en"
               )}`}</p>
-              <p>{`Tax Credits Applied: ${taxCreds}`}</p>
+              <p>{`Tax Credits Applied: ${taxCreds.toLocaleString("en")}`}</p>
               <p>{`Net Amount: $${totalAfterTax.toLocaleString("en")}`}</p>
               <p>{`System Size: ${props.systemSize} kW`}</p>
               <p>{`Overall Offset: ${props.offset}%`}</p>

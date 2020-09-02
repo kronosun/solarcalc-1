@@ -13,9 +13,6 @@ const FinanceListItem = (props) => {
     <div className="FinanceListItem">
       <Link to={`/${props.id}`}>{props.name}</Link>
       <p>{final.toFixed(2).toLocaleString()}</p>
-      <p>0.00</p>
-      <p>0.00</p>
-      <p>0.00</p>
     </div>
   );
 };

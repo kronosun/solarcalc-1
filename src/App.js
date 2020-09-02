@@ -461,9 +461,6 @@ function App() {
                   </div>
                   <div className="finance-headings">
                     <p>Commission</p>
-                    <p>First 18</p>
-                    <p>Remaining</p>
-                    <p>W/O Tax Creds</p>
                   </div>
 
                   <div className="financing">
