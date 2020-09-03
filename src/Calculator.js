@@ -225,7 +225,7 @@ function Calculator() {
         <p className="calc--title">Variables</p>
         <div className="calc-inputs">
           <div className="calc-input">
-            <label htmlFor="lights">LED Lights Package</label>
+            <label htmlFor="lights">LED Light Package</label>
             <select
               value={lights}
               onChange={(e) => {
