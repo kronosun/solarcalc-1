@@ -18,7 +18,11 @@ const MonthlyFinance = (props) => {
     );
   }
   function calcThirtyYear() {
-    let prevYear = parseInt(props.powerBill);
+    if (parseInt(props.powerBill == 0)) {
+      let prevYear = 1;
+    } else {
+      let prevYear = parseInt(props.powerBill);
+    }
     let totalPaid = 0;
     let arr = [];
 
